@@ -1,73 +1,105 @@
-# Welcome to your Lovable project
+# 💸 ExpenseAI – Smart Expense Tracker
 
-## Project info
+ExpenseAI is a modern, AI-assisted expense tracking web application that helps users monitor spending, manage budgets, and gain intelligent financial insights through a clean and user-friendly dashboard.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+---
 
-## How can I edit this code?
+## 🚀 Features
 
-There are several ways of editing your application.
+- 🔐 User Authentication (Signup & Login)
+- 👤 User-specific expense storage
+- 💰 Monthly budget tracking with progress bar
+- 📊 Recent expenses overview
+- 🤖 AI Spending Coach (smart alerts & tips)
+- 📈 Analytics & budget insights (planned)
+- 🔒 Secure backend logic
+- 🔑 Password hashing
+- 🚪 Explicit logout handling
+- 📱 Responsive UI
 
-**Use Lovable**
+---
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+## 🛠️ Tech Stack
 
-Changes made via Lovable will be committed automatically to this repo.
+### Frontend
+- HTML
+- CSS
+- JavaScript
 
-**Use your preferred IDE**
+### Backend
+- Python (Flask)
+- MySQL
+- Flask Sessions / JWT
+- bcrypt
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Tools
+- Git & GitHub
+- VS Code
+- Node.js & npm (optional)
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+---
 
-Follow these steps:
+## 📂 Project Structure
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+ExpenseAI/
+│
+├── frontend/
+│ ├── index.html
+│ ├── styles.css
+│ ├── script.js
+│
+├── backend/
+│ ├── app.py
+│ ├── config.py
+│ ├── models.py
+│ ├── routes/
+│ │ ├── auth.py
+│ │ ├── expenses.py
+│ │ └── budgets.py
+│ └── requirements.txt
+│
+├── database/
+│ └── schema.sql
+│
+├── README.md
+└── .gitignore
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
 
-# Step 3: Install the necessary dependencies.
-npm i
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+
+---
+
+## ⚙️ Prerequisites
+
+Ensure you have the following installed:
+
+- Python 3.9+
+- MySQL 8+
+- Node.js & npm
+- Git
+
+Check versions:
+
+```bash
+python --version
+mysql --version
+node --version
+npm --version
+
+
+
+git clone https://github.com/your-username/ExpenseAI.git
+cd ExpenseAI
+
+
 ```
+cd backend
+python -m venv venv
 
-**Edit a file directly in GitHub**
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
 
-**Use GitHub Codespaces**
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+venv\Scripts\activate
 
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+pip install -r requirements.txt
+python app.py
